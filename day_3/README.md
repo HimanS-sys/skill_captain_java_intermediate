@@ -19,5 +19,5 @@ Create a Java program to model a vehicle rental system using inheritance. The pr
 - Displaying the information of each vehicle.
 
 To check the .java file:
-* go to day_3/VehicleRental/src.
+* go to day_3/CarRental/src.
 * click on Main.java file.

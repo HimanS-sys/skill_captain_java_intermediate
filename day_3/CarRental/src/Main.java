@@ -1,9 +1,9 @@
 
 class Vehicle {
-    String brand;
-    String model;
-    int year;
-    float rentalPrice;
+    private String brand;
+    private String model;
+    private int year;
+    private float rentalPrice;
 
     public Vehicle(String brand, String model, int year, float rentalPrice) {
         this.brand = brand;

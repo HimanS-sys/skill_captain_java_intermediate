@@ -7,7 +7,8 @@ You have been tasked with creating a vehicle inventory system that can store and
 - Attributes:
 - `make` (String): Represents the make of the vehicle.
 - `model` (String): Represents the model of the vehicle.
-- `year` (int): Represents the year of manufacture of the vehicle. - `price` (double): Represents the price of the vehicle.
+- `year` (int): Represents the year of manufacture of the vehicle.
+- `price` (double): Represents the price of the vehicle.
 - Methods:
 - `displayDetails()`: Abstract method that should be implemented by the subclasses to display the details of the vehicle.
 

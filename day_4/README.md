@@ -7,7 +7,8 @@ You have been tasked with creating a vehicle inventory system that can store and
 - Attributes:
 - `make` (String): Represents the make of the vehicle.
 - `model` (String): Represents the model of the vehicle.
-- `year` (int): Represents the year of manufacture of the vehicle. - `price` (double): Represents the price of the vehicle.
+- `year` (int): Represents the year of manufacture of the vehicle.
+- `price` (double): Represents the price of the vehicle.
 - Methods:
 - `displayDetails()`: Abstract method that should be implemented by the subclasses to display the details of the vehicle.
 
@@ -20,7 +21,8 @@ You have been tasked with creating a vehicle inventory system that can store and
 - `calculateMileage()`: Calculates and returns the mileage of the car based on certain criteria.
 - `Motorcycle`:
 - Additional attributes:
-- `hasSidecar` (boolean): Indicates whether the motorcycle has a sidecar or not. - `engineCapacity` (int): Represents the engine capacity of the motorcycle. - Additional methods:
+- `hasSidecar` (boolean): Indicates whether the motorcycle has a sidecar or not.
+- `engineCapacity` (int): Represents the engine capacity of the motorcycle. - Additional methods:
 - `calculateSpeed()`: Calculates and returns the top speed of the motorcycle based on certain criteria.
 
 3. In the `displayDetails()` method of each subclass, override the method from the `Vehicle` class to display the specific details of the car or motorcycle, including the additional attributes.

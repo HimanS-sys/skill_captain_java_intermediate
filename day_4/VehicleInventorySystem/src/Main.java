@@ -170,14 +170,17 @@ public class Main {
                     if(vehicleType == 1) {
                         System.out.println("Enter Car details");
                         System.out.println("make: ");
-                        String makeCar = sc.nextLine();
+                        String makeCar = sc.next();
+                        sc.nextLine(); // consumes newline character
                         System.out.println("model: ");
                         String modelCar = sc.nextLine();
                         System.out.println("year: ");
                         Integer yearCar = sc.nextInt();
                         System.out.println("total doors: ");
                         Integer numDoorsCar = sc.nextInt();
+                        sc.nextLine(); // consumes newline character
                         System.out.println("fuel type: ");
+
                         String fuelTypeCar = sc.nextLine();
                         System.out.println("Price: ");
                         Double priceCar = sc.nextDouble();
@@ -217,7 +220,8 @@ public class Main {
                     } else if(vehicleType == 2) {
                         System.out.println("Enter bike details");
                         System.out.println("make: ");
-                        String makeBike = sc.nextLine();
+                        String makeBike = sc.next();
+                        sc.nextLine(); // consumes newline character
                         System.out.println("model: ");
                         String modelBike = sc.nextLine();
                         System.out.println("year: ");
@@ -293,6 +297,7 @@ public class Main {
 
                     System.out.println("Enter type of vehicle\n1- car\n2- Motorcycle");
                     int vehicleType2 = sc.nextInt();
+                    sc.nextLine(); // consumes newline character
                     if(vehicleType2 == 1) {
                         System.out.println("Enter Car details");
                         System.out.println("make(-1 to skip): ");
@@ -365,7 +370,7 @@ public class Main {
                     } else if(vehicleType2 == 2) {
                         System.out.println("Enter Bike details");
                         System.out.println("make(-1 to skip): ");
-                        String makeBike = sc.nextLine();
+                        String makeBike = sc.next();
                         if(makeBike.isEmpty() || makeBike.trim().isEmpty()){
                             throw new IllegalArgumentException("make: Kindly enter a non empty string.");
                         }
@@ -451,6 +456,7 @@ public class Main {
                                 System.out.println("press 1 to change value, [any] to move");
                                 System.out.println("Change make:");
                                 int changeMake = sc.nextInt();
+                                sc.nextLine(); // consumes newline character
                                 if(changeMake == 1) {
                                     System.out.println("enter new value: ");
                                     String makeNew = sc.nextLine();
@@ -459,6 +465,7 @@ public class Main {
                                 }
                                 System.out.println("Change model:");
                                 int changeModel = sc.nextInt();
+                                sc.nextLine(); // consumes newline character
                                 if(changeModel == 1) {
                                     System.out.println("enter new value: ");
                                     String modelNew = sc.nextLine();
@@ -491,6 +498,7 @@ public class Main {
                                 }
                                 System.out.println("Change fuel type:");
                                 int changeFuelType = sc.nextInt();
+                                sc.nextLine(); // consumes newline character
                                 if(changeFuelType == 1) {
                                     System.out.println("enter new value: ");
                                     String fuelTypeNew = sc.nextLine();
@@ -514,18 +522,19 @@ public class Main {
                             int option = sc.nextInt();
                             if(option == 1) {
                                 Motorcycle bikeObj = bikeInventory.get(i);
-                                System.out.println("press 1 to change value, [any] to move");
+                                System.out.println("press 1 to change value, [any num] to move");
                                 System.out.println("Change make:");
                                 int changeMake = sc.nextInt();
                                 if(changeMake == 1) {
                                     System.out.println("enter new value: ");
-                                    String makeNew = sc.nextLine();
+                                    String makeNew = sc.next();
                                     bikeObj.setMake(makeNew);
                                     bikeMakeList.set(i, makeNew);
                                 }
                                 System.out.println("press 1 to change value, [any] to move");
                                 System.out.println("Change model:");
                                 int changeModel = sc.nextInt();
+                                sc.nextLine(); // consumes the newline character
                                 if(changeModel == 1) {
                                     System.out.println("enter new value: ");
                                     String modelNew = sc.nextLine();
@@ -555,7 +564,7 @@ public class Main {
                                 int changeHasSideCar = sc.nextInt();
                                 if(changeHasSideCar == 1) {
                                     System.out.println("enter new value: ");
-                                    boolean hasSideCarNew = sc.nextBoolean();
+                                    Boolean hasSideCarNew = sc.nextBoolean();
                                     bikeObj.setHasSideCar(hasSideCarNew);
                                     bikeHasSideCarList.set(i, hasSideCarNew);
                                 }
@@ -598,7 +607,7 @@ public class Main {
                         System.out.println("Check the complete car inventory to select the car for deletion:");
                         int loopSize = carInventory.size();
                         for(int i = 0; i < loopSize; i++) {
-                            System.out.println("car number " + i + " :");
+                            System.out.println("car number " + i+1 + " :");
                             carInventory.get(i).displayDetails();
                             System.out.println("press 1 to confirm deletion, 2 for next, [any] number to exit.");
                             int option = sc.nextInt();
@@ -610,6 +619,7 @@ public class Main {
                                 carPriceList.remove(i);
                                 carNumDoorsList.remove(i);
                                 carFuelTypeList.remove(i);
+                                System.out.println("Car number " + i+1 + "deleted.");
                                 break;
                             } else if(option == 2) {
                             } else {
@@ -621,7 +631,7 @@ public class Main {
                         System.out.println("Check the complete bike inventory to select the bike for deletion:");
                         int loopSize = bikeInventory.size();
                         for(int i = 0; i < loopSize; i++) {
-                            System.out.println("bike number " + i + " :");
+                            System.out.println("bike number " + i+1 + " :");
                             bikeInventory.get(i).displayDetails();
                             System.out.println("press 1 to confirm deletion, 2 for next, [any] number to exit.");
                             int option = sc.nextInt();
@@ -634,6 +644,7 @@ public class Main {
                                 bikeHasSideCarList.remove(i);
                                 bikeEngineCapacityList.remove(i);
                                 bikeWeightList.remove(i);
+                                System.out.println("Bike number " + i+1 + " deleted.");
                                 break;
                             } else if(option == 2) {
                             } else {

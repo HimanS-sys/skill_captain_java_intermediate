@@ -10,4 +10,8 @@ Write a Java program that prompts the user to enter a sentence, and then writes 
   * `path` (location with name of the file).
 2. Inside this method create`FileWriter` object with a specific filepath.
 3. Write the text on the given file using `[FileWriter Object].write(text)`.
-4. Use this method inside the main method. 
+4. Use this method inside the main method.
+
+To check the .java file:
+* go to day_7/textFileWriter/src.
+* click on Main.java file.

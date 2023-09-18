@@ -22,3 +22,7 @@ The objective of this assignment is to create a music player application using J
 4. Test the program by adding, playing, pausing, and stopping songs. Make sure the methods are functioning correctly and producing the expected output.
 
 5. Optional: Enhance the program by adding additional functionalities such as displaying the current playlist or implementing a shuffle feature.
+
+To check the .java file:
+* go to day_5/MusicPlayerInterface/src.
+* click on Main.java file.

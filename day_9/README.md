@@ -27,3 +27,8 @@ Build a simple product registration system in Java that allows users to register
 
 7. Demonstrate the functionality of the product registration system by registering a few sample products and performing various operations like displaying product details, searching for products, and generating reports.
 
+## Code
+To check the .java file:
+* go to day_9/ProductRegistrationSystem/src.
+* click on Main.java file.
+

@@ -27,6 +27,6 @@ Create a Java program that simulates user registration for an e-commerce applica
 ## Code
 To check the .java file:
 * go to day_8/eCommerceUserReg/src.
-* click on Main.java file.
+* click on UserRegistrationExample.java file.
 
    

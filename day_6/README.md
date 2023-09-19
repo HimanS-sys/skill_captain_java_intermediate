@@ -16,3 +16,7 @@ Total occurrences of 'Java': 4
 
 
 Write a Java program that reads the contents of the "input.txt" file, counts the occurrences of the word "Java", and prints the total count to the console.
+
+To check the .java file:
+* go to day_6/WordCountReadFile/src.
+* click on Main.java file.

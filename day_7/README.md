@@ -12,6 +12,7 @@ Write a Java program that prompts the user to enter a sentence, and then writes 
 3. Write the text on the given file using `[FileWriter Object].write(text)`.
 4. Use this method inside the main method.
 
+## Code
 To check the .java file:
 * go to day_7/textFileWriter/src.
 * click on Main.java file.

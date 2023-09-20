@@ -21,7 +21,7 @@ Implement the "Add to Cart" feature in an e-commerce application using Java.
 - Display the updated cart.
 - Proceed to checkout.
 
-Instructions:
+## Instructions
 1. Implement the `Product` class with the specified attributes and appropriate methods.
 
 2. Implement the `Cart` class with the required methods to handle product addition, removal, quantity updates, and cart display.
@@ -33,3 +33,8 @@ Instructions:
 5. Add comments to your code for clarity and explanation of each class and method's functionality.
 
 6. Compile and run your program to verify its correctness.
+
+## Code
+To check the .java file:
+* go to day_10/AddToCart/src.
+* click on Main.java file.
